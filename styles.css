@@ -511,6 +511,20 @@ span{
     /* border-color: white; */
 }
 
+.swiper-pagination-bullet {
+  background-color: #00bfff; /* color normal */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--main-color); /* bullet activo */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    filter: drop-shadow(0 0 10px var(--main-color));
+  color: #ffffff; /* Cambia este valor por el color que quieras */
+}
+
 /**========================================================================
  *                           CONTACT
  *========================================================================**/
