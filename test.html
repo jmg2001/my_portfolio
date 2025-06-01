@@ -1,59 +1,93 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dev Esteban | Portfolio</title>
-  <link rel="stylesheet" href="styles-test.css" />
-  <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="stylesheet" href="styles-test.css">
+
 </head>
 <body>
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Dev <span>Esteban</span>.</div>
-      <ul class="nav-links">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre Mí</a></li>
-        <li><a href="#">Proyectos</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-      <div class="social-icons">
-        <a href="#"><i class="ri-linkedin-line"></i></a>
-        <a href="#"><i class="ri-github-line"></i></a>
-        <a href="#"><i class="ri-whatsapp-line"></i></a>
-      </div>
-    </nav>
-  </header>
+  <div class="container swiper">
+                <div class="card-wrapper">
+                    <ul class="card-list swiper-wrapper">
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="img/designer.jpg" alt="Card Image" class="card-image">
+                                <p class="badge designer">Designer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                <button class='bx  bx-arrow-up-right-stroke card-button'></button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="img/developer.jpg" alt="Card Image" class="card-image">
+                                <p class="badge developer">Developer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                <button class='bx  bx-arrow-up-right-stroke card-button'></button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="img/gamer.jpg" alt="Card Image" class="card-image">
+                                <p class="badge gamer">Gamer</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                <button class='bx  bx-arrow-up-right-stroke card-button'></button>
+                            </a>
+                        </li>
+                        <li class="card-item swiper-slide">
+                            <a href="#" class="card-link">
+                                <img src="img/editor.jpg" alt="Card Image" class="card-image">
+                                <p class="badge editor">Editor</p>
+                                <h2 class="card-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
+                                <button class='bx  bx-arrow-up-right-stroke card-button'></button>
+                            </a>
+                        </li>
+                    </ul>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="hero-text">
-      <p>Hola Mundo, Soy Esteban</p>
-      <h1>Ingeniero en <br>Sistemas y <span>Desarrollador Web</span></h1>
-      <p class="description">
-        Apasionado por crear soluciones digitales innovadoras y funcionales que impacten positivamente al usuario final.
-      </p>
-      <div class="buttons">
-        <a href="#" class="btn-primary">Descargar CV</a>
-        <a href="#" class="btn-outline">Contáctame</a>
-      </div>
-      <div class="mini-icons">
-        <a href="#"><i class="ri-linkedin-fill"></i></a>
-        <a href="#"><i class="ri-github-fill"></i></a>
-        <a href="#"><i class="ri-whatsapp-fill"></i></a>
-      </div>
-    </div>
-    <div class="hero-img">
-      <!-- Aquí va tu imagen con íconos flotantes, lo puedes hacer con CSS o SVG -->
-      <div class="photo-circle">
-        <img src="tu-foto.jpg" alt="Esteban" />
-        <!-- íconos flotantes simulando órbitas -->
-        <div class="tech-icon html"><img src="html5-icon.png" /></div>
-        <div class="tech-icon js"><img src="js-icon.png" /></div>
-        <!-- agrega más íconos -->
-      </div>
-    </div>
-  </section>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+  <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+        const swiper = new Swiper('.card-wrapper', {
+            // Optional parameters
+            loop: true,
+            spaceBetween: 30,
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints:{
+                0: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
 </body>
 </html>
