@@ -6,18 +6,8 @@
     text-decoration: none;
     border: none;
     outline: none;
-    scroll-behavior: none;
+    /* scroll-behavior: none; */
     font-family: "Poppins",sans-serif;
-}
-
-html {
-  scroll-behavior: smooth; /* Esto activa el scroll suave */
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  /* scroll-padding-top: 60px; */
 }
 
 :root{
@@ -30,6 +20,8 @@ html {
 html{
     font-size: 60%;
     overflow-x: hidden;
+    scroll-behavior: smooth; /* Esto activa el scroll suave */
+    /* scroll-snap-type: y mandatory; */
 }
 
 body{
@@ -86,8 +78,6 @@ body{
 .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
-    padding: 1%;
-    /* border-bottom: 3px solid var(--main-color); */
 }
 
 #menu-icon{
@@ -99,6 +89,7 @@ body{
 section{
     min-height: 100vh;
     padding: 10rem 12% 10rem;
+    scroll-snap-align: start;
 }
 
 /**========================================================================
@@ -313,10 +304,12 @@ span{
   flex-direction: column;
   max-height: 35vh;
   transition: 0.3s ease;
+  border-top: 8px solid var(--main-color);
 }
 
 .skills-card{
     background-color: rgba(255, 255, 255, 0.03); /* o usa var(--card-bg) */
+    border-top: 8px solid var(--main-color);
     border-radius: 12px;
     overflow: hidden;
     width: 100%;
@@ -378,14 +371,15 @@ span{
     font-size: 1.2rem;
 }
 .about-skills{
-    margin-top: 7rem;
+    margin-top: 4.5rem;
 }
 
 .skills-container{
     justify-content:space-evenly;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
+    
+    /* flex-wrap: wrap; */
+    /* gap: 1.5rem; */
 }
 
 .skill{
@@ -402,7 +396,7 @@ span{
     background: transparent;
     padding: 0.5rem;
     border: 2px solid var(--main-color);
-    font-size: 4rem;
+    font-size: 3.5rem;
     border-radius: 20%;
     color: var(--text-color);
     margin-bottom: 1rem;
@@ -511,6 +505,10 @@ span{
     /* border-color: white; */
 }
 
+/* .swiper{
+    max-width: 100%;
+} */
+
 .swiper-pagination-bullet {
   background-color: #00bfff; /* color normal */
 }
@@ -522,7 +520,7 @@ span{
 .swiper-button-next,
 .swiper-button-prev {
     filter: drop-shadow(0 0 10px var(--main-color));
-  color: #ffffff; /* Cambia este valor por el color que quieras */
+    color: #ffffff; /* Cambia este valor por el color que quieras */
 }
 
 /**========================================================================
@@ -585,7 +583,7 @@ span{
     bottom: 0;
     width: 100%;
     padding: 40px 0;
-    background-color: var(--second-bg-color);
+    background-color: rgba(255, 255, 255, 0.03);
 }
 
 .footer .social,
@@ -702,7 +700,7 @@ span{
         top: 100%;
         right: 0;
         margin: 0;
-        /* width: 0; */
+        width: 0;
         padding: 1rem 3%;
         background: rgba(0,0,0,0.8);
         backdrop-filter: blur(20px);
@@ -710,6 +708,7 @@ span{
         border-left: 2px solid var(--main-color);
         border-bottom: 2px solid var(--main-color);
         display: none;
+        
     }
 
     .navbar.active{
