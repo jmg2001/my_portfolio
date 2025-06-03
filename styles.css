@@ -52,12 +52,8 @@ body{
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: 0.3s ease;
 }
 
-.logo:hover{
-    transform: scale(1.1);
-}
 
 .navbar a{
     font-size: 1.6rem;
@@ -150,7 +146,7 @@ span{
     font-weight: 500;
     line-height: 1.8;
     max-width: 1000px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .social-icons a{
@@ -300,8 +296,8 @@ span{
   width: 30%;
   color: #ffffff;
   flex-direction: column;
-  /* min-height: 28vh; */
-  height: 22vh;
+  min-height: 35vh;
+  height: auto;
   transition: 0.3s ease;
   border-top: 8px solid var(--main-color);
   text-align: left;
@@ -359,6 +355,7 @@ span{
 }
 
 .card-list{
+    text-align: left;
     padding: 1rem;
     padding-top: 0;
 }
