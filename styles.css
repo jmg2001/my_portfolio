@@ -59,11 +59,6 @@ body{
     transform: scale(1.1);
 }
 
-.navbar{
-    margin-right: 4rem;
-    min-width: 30%;
-}
-
 .navbar a{
     font-size: 1.6rem;
     color: var(--text-color);
@@ -88,7 +83,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 10rem 12% 10rem;
+    padding: 10rem 10vw;
     scroll-snap-align: start;
 }
 
@@ -258,7 +253,8 @@ span{
     background-color: var(--bg-color);
     color: var(--color-texto);
     text-align: center;
-    /* padding: 20rem; */
+    padding: 20rem 10vw;
+    margin: 0;
 }
 
 .about-information{
@@ -293,18 +289,21 @@ span{
     justify-content: space-between;
     gap: 1.5rem;
     margin-bottom: 1rem;
+    place-items: center;
 }
 
 .card{
   background-color: rgba(255, 255, 255, 0.03); /* o usa var(--card-bg) */
   border-radius: 12px;
   overflow: hidden;
-  width: 24vw;
+  width: 30%;
   color: #ffffff;
   flex-direction: column;
-  max-height: 35vh;
+  /* min-height: 28vh; */
+  height: 22vh;
   transition: 0.3s ease;
   border-top: 8px solid var(--main-color);
+  text-align: left;
 }
 
 .skills-card{
@@ -352,7 +351,7 @@ span{
 }
 
 .card-content p {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2rem;
   line-height: 2.2rem;
   margin: 0;
@@ -396,7 +395,7 @@ span{
     background: transparent;
     padding: 0.5rem;
     border: 2px solid var(--main-color);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     border-radius: 20%;
     color: var(--text-color);
     margin-bottom: 1rem;
@@ -411,7 +410,7 @@ span{
 
 .skill span{
     color: var(--text-color);
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }
 
 /**========================================================================
@@ -523,6 +522,11 @@ span{
     color: #ffffff; /* Cambia este valor por el color que quieras */
 }
 
+.swiper{
+    width: 80vw;
+    /* border: 2px solid red; */
+}
+
 /**========================================================================
  *                           CONTACT
  *========================================================================**/
@@ -530,10 +534,15 @@ span{
 .contact{
     background-color: var(--bg-color);
     text-align: center;
+    /* width: 80; */
+    place-items: center ;
+    /* margin: 0 10vw; */
+    /* border: 2px solid red; */
 }
 
 .contact-content{
     margin-top: 2%;
+    margin: 15vh 5vw;
 }
 
 .contact h2{
@@ -685,12 +694,13 @@ span{
     }
 
     section{
-        padding: 10rem 3% 2rem;
+        padding: 10rem 10vw;
     }
     
  }
 
  @media(max-width:895px){
+
     #menu-icon{
         display: block;
     }
@@ -723,7 +733,7 @@ span{
 
     .home{
         flex-direction: column-reverse;
-        margin: 5rem 4rem;
+        /* margin: 5rem 10vw; */
         justify-content:stretch;
     }
 
@@ -733,17 +743,23 @@ span{
 
     .home-content h1{
         font-size: 8rem;
-        margin-top: 3re;
+        margin-top: 3rem;
     }
 
     .home-content p{
         max-width: 600px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
     
     .about-information .card{
-        margin-left: 10%;
-        width: 80%;
+        /* margin-left: 10%; */
+        width: 100%;
+        height: 20%;
+    }
+
+    .swipper{
+        width: 80vw;
+        margin: 0 10vw;
     }
 
  }
