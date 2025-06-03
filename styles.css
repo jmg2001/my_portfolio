@@ -253,8 +253,9 @@ span{
     background-color: var(--bg-color);
     color: var(--color-texto);
     text-align: center;
-    padding: 20rem 10vw;
+    padding: 10rem 10vw;
     margin: 0;
+    /* margin-top: 0rem; */
 }
 
 .about-information{
@@ -534,15 +535,11 @@ span{
 .contact{
     background-color: var(--bg-color);
     text-align: center;
-    /* width: 80; */
     place-items: center ;
-    /* margin: 0 10vw; */
-    /* border: 2px solid red; */
 }
 
 .contact-content{
     margin-top: 2%;
-    margin: 15vh 5vw;
 }
 
 .contact h2{
