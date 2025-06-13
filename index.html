@@ -113,37 +113,46 @@
                         <ul class="card-list swiper-wrapper">
                             <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
-                                    <img src="img/designer.jpg" alt="Card Image" class="card-image">
-                                    <p class="badge">Trabajo</p>
-                                    <h2 class="card-title">Sistemas de Visión</h2>
-                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem, placeat atque perferendis reiciendis commodi odit</p>
-                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
-                                </a>
-                            </li>
-                            <li class="card-item swiper-slide">
-                                <a href="#" class="card-link">
-                                    <img src="img/developer.jpg" alt="Card Image" class="card-image">
+                                    <img src="img/barman.png" alt="Card Image" class="card-image">
                                     <p class="badge">Escolar</p>
-                                    <h2 class="card-title">Sistemas de Visión</h2>
-                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem, placeat atque perferendis reiciendis commodi odit</p>
+                                    <h2 class="card-title">BarBot</h2>
+                                    <p class="description">Es un prototipo funcional de un bar-bot, el cual combina los bebidas para servir un trago en específico, fue hecho con Arduino. Se utilizaron puentes H, una pantalla LCD y algunos otros componentes electrónicos.</p>
                                     <button class='bx  bx-arrow-up-right-stroke card-button'></button>
                                 </a>
                             </li>
                             <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
-                                    <img src="img/gamer.jpg" alt="Card Image" class="card-image">
+                                    <img src="img/plotter.png" alt="Card Image" class="card-image">
+                                    <p class="badge">Escolar</p>
+                                    <h2 class="card-title">Plotter</h2>
+                                    <p class="description">Se realizó un plotter 2D, en donde teniendo un dibujo en formato de vectores (svg) podemos dibujarlo dentro la superficie de alacance del plotter. Se utilizó Arduino, un módulo controlador de motores a paso, un servomotor y demás componentes electrónicos.</p>
+                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="img/sti.png" alt="Card Image" class="card-image">
                                     <p class="badge">Trabajo</p>
                                     <h2 class="card-title">Sistemas de Visión</h2>
-                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem, placeat atque perferendis reiciendis commodi odit</p>
+                                    <p class="description">He desarrollado diversos sistemas de visión, implementando detección de objetos mediante Deep Learning o haciendo tratamiento manual de las imágenes.</p>
                                     <button class='bx  bx-arrow-up-right-stroke card-button'></button>
                                 </a>
                             </li>
                             <li class="card-item swiper-slide">
                                 <a href="#" class="card-link">
-                                    <img src="img/editor.jpg" alt="Card Image" class="card-image">
-                                    <p class="badge">Editor</p>
-                                    <h2 class="card-title">Sistemas de Visión</h2>
-                                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem autem, placeat atque perferendis reiciendis commodi odit</p>
+                                    <img src="img/SCADA.png" alt="Card Image" class="card-image">
+                                    <p class="badge">Trabajo</p>
+                                    <h2 class="card-title">Sistemas SCADA</h2>
+                                    <p class="description">Se desarrollaron diversos sistemas SCADA para el monitoreo de líneas de producción con PI System.</p>
+                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
+                                </a>
+                            </li>
+                            <li class="card-item swiper-slide">
+                                <a href="#" class="card-link">
+                                    <img src="img/edsf.png" alt="Card Image" class="card-image">
+                                    <p class="badge">Trabajo</p>
+                                    <h2 class="card-title">Sistemas Medición Temperatura</h2>
+                                    <p class="description">Se desarrollo un sistema de medición de temperatura basado en un PLC con ESP32 el cual envía la información mediante HTTP y se creó una interfaz web para su configuración.</p>
 
                                     <button class='bx  bx-arrow-up-right-stroke card-button'></button>
                                 </a>
@@ -167,20 +176,20 @@
             <div class="contact-content">
                 <h2 class="heading">Contacto<span>.</span></h2>
 
-                <form action="">
+                <form  method="post" action="https://formspree.io/f/xkndbeln">
                     <div class="input-group">
                         <div class="input-box">
-                            <input type="text" placeholder="Nombre Completo">
-                            <input type="email" placeholder="Email">
+                            <input type="text" placeholder="Nombre Completo" id="name" name="name" required>
+                            <input type="email" placeholder="Email" id="email" name="email" required>
                         </div>
                         <div class="input-box">
-                            <input type="number" placeholder="Número de telefono" min="0">
-                            <input type="text" placeholder="Tema">
+                            <input type="number" placeholder="Número de telefono" min="0" id="phone" name="phone" required>
+                            <input type="text" placeholder="Tema" id="subject" name="subject" required>
                         </div>
                     </div>
 
                     <div class="input-group-2">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <textarea cols="30" rows="10" placeholder="Mensaje" id="message" name="message" required></textarea>
                         <input type="submit" value="Enviar" class="btn">
                     </div>
                 </form>
