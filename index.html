@@ -9,7 +9,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles.css">
 
 
@@ -106,69 +105,48 @@
         <section class="projects" id="projects">
             <div class="projects-content ">
                 <h2 class="heading">Proyectos<span>.</span></h2>
-
-
-                <div class="container swiper">
-                    <div class="card-wrapper">
-                        <ul class="card-list swiper-wrapper">
-                            <li class="card-item swiper-slide">
-                                <a href="#" class="card-link">
-                                    <img src="img/barman.png" alt="Card Image" class="card-image">
-                                    <p class="badge">Escolar</p>
-                                    <h2 class="card-title">BarBot</h2>
-                                    <p class="description">Es un prototipo funcional de un bar-bot, el cual combina los bebidas para servir un trago en específico, fue hecho con Arduino. Se utilizaron puentes H, una pantalla LCD y algunos otros componentes electrónicos.</p>
-                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
-                                </a>
-                            </li>
-                            <li class="card-item swiper-slide">
-                                <a href="#" class="card-link">
-                                    <img src="img/plotter.png" alt="Card Image" class="card-image">
-                                    <p class="badge">Escolar</p>
-                                    <h2 class="card-title">Plotter</h2>
-                                    <p class="description">Se realizó un plotter 2D, en donde teniendo un dibujo en formato de vectores (svg) podemos dibujarlo dentro la superficie de alacance del plotter. Se utilizó Arduino, un módulo controlador de motores a paso, un servomotor y demás componentes electrónicos.</p>
-                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
-                                </a>
-                            </li>
-                            <li class="card-item swiper-slide">
-                                <a href="#" class="card-link">
-                                    <img src="img/sti.png" alt="Card Image" class="card-image">
-                                    <p class="badge">Trabajo</p>
-                                    <h2 class="card-title">Sistemas de Visión</h2>
-                                    <p class="description">He desarrollado diversos sistemas de visión, implementando detección de objetos mediante Deep Learning o haciendo tratamiento manual de las imágenes.</p>
-                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
-                                </a>
-                            </li>
-                            <li class="card-item swiper-slide">
-                                <a href="#" class="card-link">
-                                    <img src="img/SCADA.png" alt="Card Image" class="card-image">
-                                    <p class="badge">Trabajo</p>
-                                    <h2 class="card-title">Sistemas SCADA</h2>
-                                    <p class="description">Se desarrollaron diversos sistemas SCADA para el monitoreo de líneas de producción con PI System.</p>
-                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
-                                </a>
-                            </li>
-                            <li class="card-item swiper-slide">
-                                <a href="#" class="card-link">
-                                    <img src="img/edsf.png" alt="Card Image" class="card-image">
-                                    <p class="badge">Trabajo</p>
-                                    <h2 class="card-title">Sistemas Medición Temperatura</h2>
-                                    <p class="description">Se desarrollo un sistema de medición de temperatura basado en un PLC con ESP32 el cual envía la información mediante HTTP y se creó una interfaz web para su configuración.</p>
-
-                                    <button class='bx  bx-arrow-up-right-stroke card-button'></button>
-                                </a>
-                            </li>
-                        </ul>
-
-                        <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-
-                        <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                <div class="projects-container">
+                    <div class="project-item">
+                        <img src="img/SCADA.png" alt="Card Image" class="card-image">
+                        <div style="display: flex;align-items: center;padding: 10px 0;justify-content: space-between;">
+                            <h2 class="card-title">Sistemas SCADA</h2>
+                            <p class="badge">Trabajo</p>
+                        </div>
+                        <p class="description">Se desarrollaron diversos sistemas SCADA para el monitoreo de líneas de producción con PI System.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/sti.png" alt="Card Image" class="card-image">
+                        <div style="display: flex;align-items: center;padding: 10px 0;justify-content: space-between;">
+                            <h2 class="card-title">Sistemas de Visión</h2>
+                            <p class="badge">Trabajo</p>
+                        </div>
+                        <p class="description">He desarrollado diversos sistemas de visión, implementando detección de objetos mediante Deep Learning o haciendo tratamiento manual de las imágenes.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/edsf.png" alt="Card Image" class="card-image">
+                        <div style="display: flex;align-items: center;padding: 10px 0;justify-content: space-between;">
+                            <h2 class="card-title">Sistema de Medición de Temperatura</h2>
+                            <p class="badge">Trabajo</p>
+                        </div>
+                        <p class="description">Se desarrollo un sistema de medición de temperatura basado en un PLC con ESP32 el cual envía la información mediante HTTP y se creó una interfaz web para su configuración.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/plotter.png" alt="Card Image" class="card-image">
+                        <div style="display: flex;align-items: center;padding: 10px 0;justify-content: space-between;">
+                            <h2 class="card-title">Plotter</h2>
+                            <p class="badge">Escolar</p>
+                        </div>
+                        <p class="description">Se realizó un plotter 2D, en donde teniendo un dibujo en formato de vectores (svg) podemos dibujarlo dentro la superficie de alacance del plotter. Se utilizó Arduino, un módulo controlador de motores a paso, un servomotor y demás componentes electrónicos.</p>
+                    </div>
+                    <div class="project-item">
+                        <img src="img/barman.png" alt="Card Image" class="card-image">
+                        <div style="display: flex;align-items: center;padding: 10px 0;justify-content: space-between;">
+                            <h2 class="card-title">BarBot</h2>
+                            <p class="badge">Escolar</p>
+                        </div>
+                        <p class="description">Es un prototipo funcional de un bar-bot, el cual combina los bebidas para servir un trago en específico, fue hecho con Arduino. Se utilizaron puentes H, una pantalla LCD y algunos otros componentes electrónicos.</p>
                     </div>
                 </div>
-
-
             </div>
         </section>
 
@@ -223,37 +201,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
-        const swiper = new Swiper('.card-wrapper', {
-            // Optional parameters
-            loop: true,
-            spaceBetween: 30,
-            paginationDynamicBullets:true,
-
-            // If we need pagination
-            pagination: {
-            el: '.swiper-pagination',
-            },
-
-            // Navigation arrows
-            navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-            },
-
-            breakpoints:{
-                0: {
-                    slidesPerView: 1
-                },
-                768: {
-                    slidesPerView: 2
-                },
-                1024: {
-                    slidesPerView: 3
-                }
-            }
-        });
-    </script>
 </body>
 </html>
