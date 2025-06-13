@@ -652,9 +652,9 @@ span{
 @keyframes words {
     0%,20%{content: "Ingeniero Mecatrónico";}
     21%,40%{content: "Software Developer";}
-    41%,60%{content: "Data Analyst";}
+    41%,60%{content: "Integrador de Sistemas";}
     61%,80%{content: "SCADA Specialist";}
-    81%,100%{content: "Atributo2";}
+    81%,100%{content: "Data Analyst";}
 }
 
 @keyframes typing {
