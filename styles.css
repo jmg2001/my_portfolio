@@ -10,6 +10,13 @@
     font-family: "Poppins",sans-serif;
 }
 
+input:-internal-autofill-selected  {
+  background-color: transparent !important;
+  /* -webkit-box-shadow: 0 0 0px 1000px white inset !important; */
+  /* box-shadow: 0 0 0px 1000px white inset !important; */
+  /* color: black !important; */
+}
+
 :root{
     --bg-color:#0d1117;
     --second-bg-color:#131313;
