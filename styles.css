@@ -108,6 +108,7 @@ section{
     text-align: left;
     justify-content: center;
     margin-top: 3rem;
+    overflow: hidden;
 }
 
 span{
@@ -146,6 +147,7 @@ span{
     cursor: pointer;
     transition: 0.4s ease-in-out;
     animation: float 3s infinite ease-in-out;
+    /* aspect-ratio: 5/16; */
 }
 
 .home-img img:hover{
@@ -257,18 +259,6 @@ span{
  *========================================================================**/
 
 .about{
-    /* align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    background-color: var(--bg-color);
-    color: var(--color-texto);
-    text-align: center;
-    padding: 10rem 10vw;
-    margin: 0;
-    padding-top: 15rem;
-    display: flex;
-    flex-direction: column; */
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -488,26 +478,6 @@ span{
     font-weight: 600;
     margin: 0;
 }
-
-/* .project-item .card-button{
-    height: 35px;
-    width: 35px;
-    font-size: 3rem;
-    color: var(--main-color);
-    background: none;
-    border-radius: 20%;
-    margin: 1%px 0 5px;
-    cursor: pointer;
-    border: 2px solid var(--main-color);
-    transition: 0.4s ease;
-    margin-top: 20px;
-    bottom: 15px;
-}
-
-.project-item:hover .card-button{
-    color: white;
-    background-color: var(--main-color);
-} */
 
 .project-item:hover .badge{
     background-color: var(--main-color);
@@ -734,31 +704,37 @@ span{
 
     .home{
         flex-direction: column-reverse;
-        /* margin: 5rem 10vw; */
-        /* justify-content:stretch; */
         gap: 0;
+        margin: 0;
     }
 
     .home-content h3{
-        font-size: 1rem;
+        font-size: 2rem;
+    }
+
+    .home-content h2{
+        font-size: 2.5rem;
     }
 
     .home-content h1{
-        font-size: 2rem;
-        margin-top: 3rem;
+        font-size: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .home-content p{
         max-width: 600px;
-        /* margin: 0 auto; */
     }
     
-
-
+    .home-img img{
+        max-height: 40vh;
+        max-width: 60vw;
+    }
+    
     .cards-container{
         grid-template-columns: repeat(2,1fr);
         column-gap: 20px;
-        row-gap: 20px;
+        row-gap: 40px;
     }
 
     .skills-card{
@@ -777,18 +753,18 @@ span{
 @media(max-width:600px){
     .projects-container{
         grid-template-columns: repeat(1, 1fr);
-        grid-row-gap: 10px;
+        grid-row-gap: 30px;
     }
 
     .cards-container{
         grid-template-columns: repeat(1,1fr);
         column-gap: 10px;
-        row-gap: 10px;
+        row-gap: 30px;
     }
 
     .skills-card{
         grid-template-columns: repeat(3,1fr);
         column-gap: 4px;
-        row-gap: 4px;
+        row-gap: 10px;
     }
 }
