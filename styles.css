@@ -115,7 +115,7 @@ section{
     text-align: left;
     justify-content: center;
     margin-top: 3rem;
-    overflow: hidden;
+    overflow: none;
 }
 
 span{
