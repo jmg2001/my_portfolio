@@ -719,6 +719,11 @@ ul {
 }
 
 @media (max-width: 895px) {
+
+  .header{
+    justify-content: right;
+  }
+
   #menu-icon {
     display: block;
   }
