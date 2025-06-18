@@ -112,7 +112,7 @@ section {
 .home {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 15rem;
 }
 
@@ -162,6 +162,7 @@ span {
   cursor: pointer;
   transition: 0.4s ease-in-out;
   animation: float 3s infinite ease-in-out;
+  min-height: 300px;
   /* aspect-ratio: 5/16; */
 }
 
@@ -719,8 +720,7 @@ ul {
 }
 
 @media (max-width: 895px) {
-
-  .header{
+  .header {
     justify-content: right;
   }
 
