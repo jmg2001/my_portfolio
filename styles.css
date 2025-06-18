@@ -625,7 +625,7 @@ ul {
 
 @keyframes cursor {
   to {
-    border-left: 2px solid var(--main-color);
+    border-left: 3px solid var(--main-color);
   }
 }
 
@@ -640,7 +640,7 @@ ul {
   }
   41%,
   60% {
-    content: "Integrador de Sistemas";
+    content: "System Integrator";
   }
   61%,
   80% {
