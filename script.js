@@ -25,3 +25,17 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
 };
+
+
+function copyToClipboard(text, id) {
+  // Copiar al portapapeles
+  navigator.clipboard.writeText(text).then(() => {
+    // Mostrar mensaje "Copiado"
+    const msg = document.getElementById(id);
+    msg.style.opacity = 1;
+
+    setTimeout(() => {
+      msg.style.opacity = 0;
+    }, 1000);
+  });
+}
