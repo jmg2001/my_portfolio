@@ -480,7 +480,6 @@ ul {
 
 .contact {
   text-align: center;
-  padding: 12vh 10vw 0 10vw;
 }
 
 .contact-content {
@@ -503,6 +502,7 @@ ul {
   font-size: 2rem;
   margin-bottom: 40px;
   display: flex;
+  text-align: start;
 }
 
 .contact-grid {
@@ -591,6 +591,8 @@ ul {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
+  width: 100%;
+  text-align: center;
 }
 
 /*-------------------------------- FOOTER ------------------------------*/
