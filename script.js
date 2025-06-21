@@ -26,7 +26,6 @@ menuIcon.onclick = () => {
   navbar.classList.toggle("active");
 };
 
-
 function copyToClipboard(text, id) {
   // Copiar al portapapeles
   navigator.clipboard.writeText(text).then(() => {
