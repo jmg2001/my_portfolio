@@ -92,7 +92,7 @@ body {
 
 section {
   min-height: 100vh;
-  padding: 10vh 10vw 0 10vw;
+  padding: 12vh 10vw 0 10vw;
   scroll-snap-align: start;
 }
 
