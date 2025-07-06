@@ -255,13 +255,7 @@ span {
 .experience {
   display: flex;
   flex-direction: column;
-}
-
-.experience .title {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
 }
 
 .experience h2 {
@@ -270,73 +264,87 @@ span {
   text-align: center;
 }
 
+.experience i,
+h3 {
+  font-size: 3rem;
+}
+
 .timeline {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
+  margin-top: 10rem;
   position: relative;
-  width: 80vw;
-  font-size: medium;
-  height: 70vh;
+  max-width: 70vw;
+  display: flex;
+  justify-content: center;
 }
 
-.timeline::before {
-  content: "";
+.timeline:before {
   position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 4px;
+  content: "";
+  width: 8px;
+  height: calc(100% + 80px);
   background: var(--main-color);
-  z-index: 1;
+  left: 8px;
+  top: -50px;
+  border-radius: 4px;
 }
 
-.timeline-item {
+.timeline-section {
+  padding-left: 50px;
+  display: block;
   position: relative;
-  text-align: center;
 }
 
-.timeline-item::before {
+.timeline-box {
+  position: relative;
+  border-top: 15px solid var(--main-color);
+  border-radius: 1rem;
+  padding: 5px 15px;
+  background-color: rgba(255, 255, 255, 0.03);
+  margin-bottom: 40px;
+}
+
+.timeline-box:before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  z-index: 2;
+  width: 50px;
+  height: 4px;
+  background-color: var(--main-color);
+  top: -10px;
+  left: -35px;
 }
 
-.timeline-content {
+.timeline-box:after {
+  content: "";
   position: absolute;
-  width: 30vw;
-  height: 12vh;
-  padding: 2rem;
-  background-color: rgba(255, 255, 255, 0.03);
-  border-top: 0.8rem solid var(--main-color);
-  border-radius: 0.6rem;
-  left: calc(50% - 15vw);
+  width: 30px;
+  aspect-ratio: 1;
+  background: white;
+  top: -25px;
+  left: -53px;
+  border-radius: 100%;
+}
+
+.timeline-box p {
+  font-size: 1.4rem;
+}
+
+.box-title {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  transition: 0.3s ease;
+  margin-bottom: 12px;
 }
 
-.timeline-content:hover {
-  transform: scale(1.02);
-  box-shadow: 0 0 10px var(--main-color);
+.box-title i {
+  margin-right: 10px;
 }
 
-/* Los impares van ARRIBA */
-.timeline-item:nth-child(odd) .timeline-content {
-  top: calc(50% - 18vh);
+.box-title h4 {
+  margin-top: 5px;
+  font-size: 1.5rem;
 }
-
-/* Los pares van ABAJO */
-.timeline-item:nth-child(even) .timeline-content {
-  top: calc(50% + 6vh);
+.box-content strong {
+  font-style: italic;
+  margin-right: 5px;
 }
 
 /*-------------------------------- ABOUT ------------------------------*/
@@ -815,13 +823,11 @@ ul {
 /**========================================================================
  **                            RESPONSIVE
  *========================================================================**/
-
 @media (max-width: 1285px) {
   html {
     font-size: 55%;
   }
 }
-
 @media (max-width: 991px) {
   html {
     font-size: 40%;
@@ -842,26 +848,14 @@ ul {
     font-size: small;
   }
 
+  .about h1 {
+    font-size: 4rem;
+  }
+
   .timeline-content {
     width: 30vw;
     height: 12vh;
   }
-
-  /* Los impares van ARRIBA */
-  .timeline-item:nth-child(odd) .timeline-content {
-    top: calc(50% - 18vh);
-  }
-
-  /* Los pares van ABAJO */
-  .timeline-item:nth-child(even) .timeline-content {
-    top: calc(50% + 6vh);
-  }
-
-  /* .projects-container{
-        grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    } */
 }
 
 @media (max-width: 895px) {
@@ -950,8 +944,9 @@ ul {
     grid-row-gap: 20px;
   }
 
-  .timeline {
-    font-size: x-small;
+  .experience i,
+  h3 {
+    font-size: 2rem;
   }
 }
 
